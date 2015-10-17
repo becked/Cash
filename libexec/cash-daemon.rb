@@ -16,7 +16,7 @@ if DaemonKit.arguments.options[:vacuum]
   puts $redis.inspect
   Vacuum.run
 
-# Directory mode: grab a single directory once
+# Directory mode: grab a single directory once (ugh with the if/else's)
 elsif DaemonKit.arguments.options[:directory]
   if DaemonKit.arguments.options[:directory] == :blackboard
     Blackboard.new.run
