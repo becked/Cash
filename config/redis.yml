@@ -1,0 +1,5 @@
+production:
+  host: example.com
+
+development:
+  host: example.com

@@ -1,0 +1,12 @@
+production:
+  host: example.com
+  path: "/url"
+  auth: [user, pass]
+
+development:
+  host: example.com
+  path: "/url"
+  auth: [user, pass]
+
+
+

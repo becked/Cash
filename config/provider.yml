@@ -1,0 +1,11 @@
+production:
+  prot: "https"
+  host: exmaple.com
+  path: /providers/all.json
+  auth: [user, pass]
+
+development:
+  prot: "http"
+  host: exmaple.com
+  path: /providers/all.json
+  auth: [user, pass]

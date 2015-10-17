@@ -1,0 +1,21 @@
+common: &common
+
+  ad: &ad
+    port: 636
+    userid_attribute: samaccountname
+    user_filter: (&(objectCategory=person)(objectClass=user))
+    group_filter: (objectCategory=group)
+    encryption: !ruby/sym simple_tls
+    attributes: [department, distinguishedname, employeenumber, givenname, mail, mailnickname, physicaldeliveryofficename, proxyaddresses, samaccountname, sn, telephonenumber, useraccountcontrol, memberof, lastlogontimestamp, accountexpires, displayname, msexchhomeservername, info]
+    lifenumber_attribute: !ruby/sym employeeid
+
+
+production:
+  <<: *common
+
+development:
+  <<: *common
+
+test:
+  <<: *common
+

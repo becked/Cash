@@ -1,0 +1,11 @@
+production:
+  host: example.com
+  path: /
+  auth: [user, pass]
+  prot: https
+
+development:
+  host: localhost
+  path: /
+  auth: [user, pass]
+  prot: http

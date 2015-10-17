@@ -1,0 +1,11 @@
+production:
+  prot: "https"
+  host: example.com
+  path: /faculty/all.json
+  auth: [user, pass]
+
+development:
+  prot: "http"
+  host: example.com
+  path: /faculty/all.json
+  auth: [user, pass]

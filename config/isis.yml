@@ -1,0 +1,11 @@
+production:
+  host: example.com
+  path: /students.xml
+  auth: [user, pass]
+
+development:
+  host: example.com
+  path: /students.xml
+  auth: [user, pass]
+
+
